@@ -17,4 +17,4 @@ If you want to make an inference with the webcam, you must give the webcam index
 
 If you want to make an inference with a photo, you must give the path of the image
 
-``` python3 tools/scrfd.py --kind image --path ```
+``` python3 tools/scrfd.py --kind image --path image path ```
