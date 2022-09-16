@@ -3,18 +3,18 @@
 
 ```pip install -r requirements.txt```
 
-## Download onnx model
+## Download onnx model and put theme on root
 
 https://drive.google.com/file/d/1pboyNMUStfv89JkKBRTQtfl2iRKHHZ0g/view?usp=sharing
 
-## Run inferenc file
+## Run inference file
 
 ``` python3 tools/scrfd.py --kind webcam/image```
 
-if you want get webcam inference you may give index of webcame:
+If you want to make an inference with the webcam, you must give the webcam index
 
 ``` python3 tools/scrfd.py --kind webcam --webcam 0```
 
-if you want get image inference you may give path of input image:
+If you want to make an inference with a photo, you must give the path of the image
 
 ``` python3 tools/scrfd.py --kind image --path ```
