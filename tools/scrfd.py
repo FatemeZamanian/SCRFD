@@ -343,7 +343,7 @@ def img_inference(path):
         print('output:', filename)
         cv2.imwrite('./outputs/%s'%filename, img)
 
-def webcam_inferenc(webcame_index=0):
+def webcam_inference(webcame_index=0):
     detector = SCRFD(model_file='./det.onnx')
     detector.prepare(-1)
     video = cv2.VideoCapture(webcame_index)
@@ -372,9 +372,8 @@ def webcam_inferenc(webcame_index=0):
         cv2.waitKey(1)
 
 if __name__ == '__main__':
-    import glob
     prs=parse_args()
     if prs.kind=='image':
         img_inference(prs.path)
     elif prs.kind=='webcam':
-        webcam_inferenc(prs.webcam)
+        webcam_inference(prs.webcam)
